@@ -23,7 +23,7 @@ namespace converter
                 try
                 {
                     /*excelappworkbook = excelapp.Workbooks.Open(dialog.FileName,
-    Type.Missing, Type.Missing, "   ", Type.Missing,
+    Type.Missing, Type.Missing, 1, Type.Missing,
     Type.Missing, Type.Missing, Type.Missing, Type.Missing,
     Type.Missing, Type.Missing, Type.Missing, Type.Missing,
     Type.Missing, Type.Missing);
