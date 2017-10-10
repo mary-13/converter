@@ -1,0 +1,18 @@
+D:\7 семестр\Системы ИИ\app\converter\converter\bin\Debug\converter.exe.config
+D:\7 семестр\Системы ИИ\app\converter\converter\bin\Debug\converter.exe
+D:\7 семестр\Системы ИИ\app\converter\converter\bin\Debug\converter.pdb
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.csprojResolveAssemblyReference.cache
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.Form1.resources
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.Properties.Resources.resources
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.csproj.GenerateResource.Cache
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.exe
+D:\7 семестр\Системы ИИ\app\converter\converter\obj\Debug\converter.pdb
+C:\Users\User\Documents\GitHub\converter\converter\converter\bin\Debug\converter.exe.config
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.exe
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.pdb
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.Form1.resources
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\converter\converter\converter\obj\Debug\converter.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\converter\converter\converter\bin\Debug\converter.exe
+C:\Users\User\Documents\GitHub\converter\converter\converter\bin\Debug\converter.pdb
