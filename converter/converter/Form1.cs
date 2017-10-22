@@ -3,6 +3,9 @@ using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Data.OleDb;
+using System.Data;
+using System.Reflection;
 
 namespace converter
 {
@@ -22,6 +25,22 @@ namespace converter
             if (dialog.ShowDialog() == DialogResult.OK)
                 try
                 {
+                    string name = dialog.FileName;
+                    int position = name.LastIndexOf("\\");
+                    name = name.Substring(position + 1);
+
+                    Microsoft.Office.Interop.Excel.Application myExcel;
+                    Microsoft.Office.Interop.Excel.Workbook myWorkbook;
+                    Microsoft.Office.Interop.Excel.Worksheet worksheet;
+
+                    myExcel = new Microsoft.Office.Interop.Excel.Application();
+                    myExcel.Workbooks.Open(name, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value);
+                    myWorkbook = myExcel.ActiveWorkbook;
+                    worksheet = (Microsoft.Office.Interop.Excel.Worksheet)myWorkbook.Worksheets[3];
+                    myWorkbook.SaveAs(outputFileName.txt, Microsoft.Office.Interop.Excel.XlFileFormat.xlTextWindows, Missing.Value, Missing.Value, Missing.Value, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value);
+
+                    myWorkbook.Close(false, Missing.Value, Missing.Value);
+                    myExcel.Quit();
                     /*excelappworkbook = excelapp.Workbooks.Open(dialog.FileName,
     Type.Missing, Type.Missing, 1, Type.Missing,
     Type.Missing, Type.Missing, Type.Missing, Type.Missing,
@@ -36,9 +55,7 @@ namespace converter
                 {
                     MessageBox.Show("Файл не выбран ");
                 }
-            string name = dialog.FileName;
-            int position = name.LastIndexOf("\\");
-            name = name.Substring(position + 1);
+            
             label2.Text = "Selected file:";
             label3.Text = name;
             btnConvert.Enabled = true;
