@@ -90,7 +90,7 @@
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(108, 27);
             this.btnOpen.TabIndex = 5;
-            this.btnOpen.Text = "Open converted file";
+            this.btnOpen.Text = "Open folder with file";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
